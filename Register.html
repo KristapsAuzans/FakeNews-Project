@@ -50,46 +50,49 @@
         <form class="form-horizontal" id="registration-form" role="form">
             <h2>Register</h2>
             <div class="form-group">
-                <label for="username" class="col-sm-3 control-label">Username*</label>
+                <label class="col-sm-3 control-label">Username*</label>
                 <div class="col-sm-9">
-                    <input type="text" id="username" placeholder="username" class="form-control" autofocus>
-
+                    <input type="text" id="txt" required class="form-control" minlength="2" autofocus>
+                    
                 </div>
             </div>
             <div class="form-group">
-                <label for="email" class="col-sm-3 control-label">Email*</label>
+                <label class="col-sm-3 control-label">Email*</label>
                 <div class="col-sm-9">
-                    <input type="email" id="email" placeholder="Email" class="form-control">
+                    <input type="email" id="email" onchange="email_validate(this.value);" class="form-control" required>
+                    <div class="status" id="status"></div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="password" class="col-sm-3 control-label">Password*</label>
+                <label class="col-sm-3 control-label">Password*</label>
                 <div class="col-sm-9">
-                    <input type="password" id="password" placeholder="Password" class="form-control">
+                    <input type="password" required name="password" id="password" placeholder="Minimum 8 letters" class="form-control" minlength="8">
                 </div>
             </div>
             <div class="form-group">
-                <label for="confirm-password" class="col-sm-3 control-label">Confirm Password*</label>
+                <label class="col-sm-3 control-label">Confirm Password*</label>
                 <div class="col-sm-9">
-                    <input type="password" id="password" placeholder="Confirm Password" class="form-control">
+                    <input type="password" required name="password" id="confirmPassword" placeholder="Enter again to validate" class="form-control"
+                        minlength="8" onkeyup="checkPass(); return false;">
+                    <span id="confirmMessage" class="confirmMessage"></span>
                 </div>
             </div>
             <div class="form-group">
-                <label for="Fullname" class="col-sm-3 control-label">Fullname*</label>
+                <label class="col-sm-3 control-label">Fullname*</label>
                 <div class="col-sm-9">
-                    <input type="text" id="Fullname" placeholder="Fullname" class="form-control" autofocus>
+                    <input type="text" id="txt" class="form-control"  onkeyup="Validate(this)" required>
                 </div>
             </div>
             <div class="form-group">
-                <label for="Lastname" class="col-sm-3 control-label">Lastname</label>
+                <label class="col-sm-3 control-label">Lastname</label>
                 <div class="col-sm-9">
-                    <input type="text" id="Lastname" placeholder="Lastname" class="form-control" autofocus>
+                    <input type="text" id="Lastname" class="form-control" >
                 </div>
             </div>
             <div class="form-group">
-                <label for="country" class="col-sm-3 control-label">Country*</label>
+                <label class="col-sm-3 control-label">Country*</label>
                 <div class="col-sm-9">
-                    <select id="country" class="form-control">
+                    <select id="country" class="form-control" required>
                         <option>Afghanistan</option>
                         <option>Bahamas</option>
                         <option>Cambodia</option>
@@ -104,12 +107,15 @@
             </div>
 
 
+
             <div class="form-group">
                 <div class="col-sm-9 col-sm-offset-3">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox">Agree with
-                            <a href="#">terms</a> and conditions*
+                            <input type="checkbox" required name="terms" id="field_terms">
+                            <label for="terms">Agree with the
+                                <a href="">terms and conditions</a>
+                            </label>
                         </label>
                     </div>
                 </div>
@@ -118,9 +124,11 @@
             <div class="form-group">
                 <div class="col-sm-9 col-sm-offset-3">
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
+
                 </div>
             </div>
-        </form>
+    </div>
+    </form>
 
     </div>
 
