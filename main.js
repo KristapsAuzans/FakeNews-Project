@@ -47,4 +47,11 @@ var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{
     }
 }
 
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(56.9645215, 24.1020314),
+        zoom: 15,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
 

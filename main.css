@@ -118,3 +118,9 @@ body {
     margin-bottom: 1em;
 }
 
+#googleMap{
+  width:400px;
+  height:400px;
+  background:yellow;
+}
+
