@@ -8,8 +8,7 @@
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 </head>
 
 <body>
@@ -35,12 +34,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="AboutUs.html">About us</a>
                     </li>
-
-
                 </ul>
-
-
-
             </nav>
         </div>
     </header>
@@ -183,18 +177,7 @@
             <h2 class="row text-center">Contacts</h2>
             <div class="col-sm-6" id="googleMap">
 
-                <script>
-                    function myMap() {
-                        var mapProp = {
-                            center: new google.maps.LatLng(56.9509545, 24.0983929),
-                            zoom: 15,
-
-                        };
-                       map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                    };
-                    
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfolRoCeogvNyAb1trYnYcp2gg1ZVu-I&callback=myMap"></script>
+               
             </div>
 
             <div class="col-sm-6">
@@ -234,5 +217,18 @@
     </footer>
 
 </body>
+<script>
+    function myMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(56.9509545, 24.0983929),
+            zoom: 15,
 
+        };
+       map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    };
+    
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfolRoCeogvNyAb1trYnYcp2gg1ZVu-I&callback=myMap"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
