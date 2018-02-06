@@ -124,3 +124,17 @@ body {
   background:yellow;
 }
 
+#chat{
+  text-align:center;  
+  overflow-y: scroll;
+  height: 400px;
+  resize: none;
+  }
+  
+
+
+#chat-panel{
+  background-color: white;
+  text-align: left;
+  
+}
