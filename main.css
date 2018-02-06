@@ -124,8 +124,7 @@ body {
   background:yellow;
 }
 
-#chat{
-  text-align:center;  
+#chat{  
   overflow-y: scroll;
   height: 400px;
   resize: none;
