@@ -8,43 +8,61 @@
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 
 <body>
     <header class="container">
         <div class="row">
-        
-                <img src="images\logo.png" class="img-fluid" alt="Responsive image" >
-            
+
+            <img src="images\logo.png" class="img-fluid" alt="Responsive image">
+
             <nav class="col-sm-12 text-right">
-                    <ul class="nav nav-pills">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Articles.html">Articles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Chat.html">Chat</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Register.html">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="AboutUs.html">About us</a>
-                           </li>
-                                
-                              
-                        </ul>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Articles.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Chat.html">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About us</a>
+                    </li>
+
+
+                </ul>
             </nav>
         </div>
     </header>
     <ol class="breadcrumb">
-            <li class="breadcrumb-item "><a href="index.html">Home</a></li>               
-            <li class="breadcrumb-item ">Chat</a></li>
-            </ol>
-    
-    
+        <li class="breadcrumb-item ">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item ">Chat</a>
+        </li>
+    </ol>
+
+    <section class="container">
+        <h2>Chat</h2>
+        <div>
+            <textarea name="chat" id="chat" cols="150" rows="20" class="row col-sm-12"></textarea>
+        </div>
+        <div class="row col-sm-12">
+            <label>Username: </label>
+            <input type="text">
+            <label>Message: </label>
+            <input type="text" class = "col-sm-10">
+            <button type="submit" class = "col-sm-2">Add</button>
+
+        </div>
+    </section>
+
     <footer class="container">
         <div class="row">
             <p class="col-sm-4">&copy; FakeNews sponsored by Putin</p>
@@ -65,7 +83,7 @@
 
         </div>
     </footer>
- 
+
 </body>
 
 </html>
