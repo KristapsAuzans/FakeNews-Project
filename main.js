@@ -48,16 +48,19 @@ var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{
 }
 
 function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(56.9645215, 24.1020314),
+         
+    var myLatlng = new google.maps.LatLng(56.9509698,24.1004137);            
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
         zoom: 15,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        center: new google.maps.LatLng(56.9509698,24.1004137)
+    });
+  
     var marker = new google.maps.Marker({
         position: myLatlng,
-        title:"Hello World!"
+        title: "Hello World!"
     });
+    marker.setMap(map);
+};
 
-}
-marker.setMap(map);
+
 

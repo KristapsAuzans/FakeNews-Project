@@ -177,7 +177,6 @@
             <h2 class="row text-center">Contacts</h2>
             <div class="col-sm-6" id="googleMap">
 
-
             </div>
 
             <div class="col-sm-6">
@@ -216,35 +215,14 @@
         </div>
     </footer>
 
+
+    <script src="main.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfolRoCeogvNyAb1trYnYcp2gg1ZVu-I&callback=myMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </body>
-<script>
-    function myMap() {
-        // var mapProp = {
-        //     center: new google.maps.LatLng(56.9509545, 24.0983929),
-        //     zoom: 15,
 
-        // };
-        var myLatlng = new google.maps.LatLng(56.9509545, 24.0983929);
-        var mapOptions = {
-            zoom: 15,
-            center: myLatlng
-        }
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title: "Hello World!"
-        });
-
-    }
-    marker.setMap(map);
-
-
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfolRoCeogvNyAb1trYnYcp2gg1ZVu-I&callback=initMap">
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfolRoCeogvNyAb1trYnYcp2gg1ZVu-I&callback=myMap"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
