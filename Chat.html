@@ -48,7 +48,11 @@
     <section class="container">
         <h2>Chat</h2>
         <div>
-            <textarea name="chat" id="chat" cols="150" rows="20" class="row col-sm-12"></textarea>
+            <div name="chat" id="chat-box" cols="150" rows="20" class="row col-sm-12">
+                <ul id="chat-list">
+
+                </ul>
+            </div>
         </div>
 
     </section>
@@ -58,20 +62,15 @@
                 <label>Username: </label>
             </div>
             <div>
-                <input type="text" name="chat-username" maxlength="16">
+                <input type="text" id="chat-username" maxlength="16">
             </div>
             <div>
                 <label>Message: </label>
             </div>
             <div>
-                <textarea type="text" class="col-sm-10" name="chat-message" maxlength="256"></textarea>
-                <button type="submit" class="col-sm-2">Send</button>
+                <textarea type="text" class="col-sm-10" id="chat-message" maxlength="256"></textarea>
+                <button type="submit" class="col-sm-2" id="chat-send"> Send</button>
             </div>
-
-
-
-
-
         </div>
     </section>
 
@@ -101,6 +100,9 @@
 
         </div>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

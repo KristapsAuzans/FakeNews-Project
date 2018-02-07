@@ -124,16 +124,19 @@ body {
   background:yellow;
 }
 
-#chat{  
+#chat-box{  
   overflow-y: scroll;
   height: 400px;
   resize: none;
+  background-color: white;
+  
   }
   
-
 
 #chat-panel{
   background-color: white;
   text-align: left;
   
 }
+
+
