@@ -44,17 +44,7 @@ body {
     margin: 0;
   }
   
-  .jumbotron {
-    display: flex;
-    align-items: center;
-    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
-    background-size: cover;
-    color: #ffffff;
-    height: 500px;
-    text-shadow: 0.25px 0.25px 0.25px #000000;
-  }
   
- 
   
   .col-md-6 {
     margin: 0 0 30px;
@@ -155,3 +145,24 @@ body {
   padding-top: 90px;
 }
 
+.carousel-inner img{
+  display: block;
+    margin: 0 auto;
+min-height: 400px;
+max-height: 400px; 
+}
+.small-article img{
+height: 75px;
+padding: 10px 10px 10px 10px;
+float:left
+}
+
+.text-justify {
+  padding: 10px 10px 10px 10px;
+}
+.small-article p{
+  float:right
+}
+.pull-left{
+  float: left !important;
+}
