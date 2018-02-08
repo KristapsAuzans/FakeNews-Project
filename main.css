@@ -124,38 +124,27 @@ body {
   background:yellow;
 }
 
-#chat-box{  
-  overflow-y: scroll;
-  height: 400px;
-  resize: none;
+.chat-controls > div {
+  margin-bottom:10px;
+}
+#chat-window{
+  height: 500px;
+  border: 1px solid #ccc;
+  margin: 10px 0px;
+  padding: 10px;
+  overflow: auto;
   background-color: white;
-  border-style: solid;  
-    
-  }
-  
-
-#chat-panel{
-  background-color: white;
-  text-align: left;
-  border-style: solid;  
 }
-
-#chat-message{  
-  margin-bottom: 10px;
-  border:1px solid black;
-  width: 80%;
+.chat-message {
+  border-bottom: 1px solid #ccc;
 }
-#chat-send{
-  width: 20%;
-  
+.chat-message h4 {
+  font-size: 26px;
 }
-#chat-username{
-  border-style: solid;  
-  
-}
-#chat-list li{
-  border-style: solid;  
-  list-style-type: none;
+.chat-message h4 em {
+  color: #ccc;
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 

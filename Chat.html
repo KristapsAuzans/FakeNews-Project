@@ -8,6 +8,7 @@
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 
 <body>
@@ -45,37 +46,32 @@
         </li>
     </ol>
 
-    <section class="container">
+
+
+    <div class="container">
         <h2>Chat</h2>
-        <div>
-            <div name="chat" id="chat-box" cols="150" rows="20" class="row col-sm-12">
-                <ul id="chat-list">
-                    
+        <div class="row">
+            <div class="col-md-12">
+                <div id="chat-window">
 
-                </ul>
+
+                </div>
+                <hr>
+                <div class="chat-controls">
+                    <div class="">
+                        <input type="text" id="chat-username-input" class="form-control" placeholder="Username:">
+                    </div>
+                    <div class="">
+                        <textarea id="chat-message-input" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="">
+                        <button id="send-chat-message" class="btn btn-default">Send!</button>
+                    </div>
+
+                </div>
             </div>
         </div>
-
-    </section>
-    <section class="container">
-        <div class="row col-sm-12" id="chat-panel">
-            <div>
-                <label>Username: </label>
-            </div>
-            <div>
-                <input type="text" id="chat-username" maxlength="16">
-            </div>
-            <div>
-                <label>Message: </label>
-            </div>
-            <div>
-                <textarea type="text" class="col-sm-10" id="chat-message" maxlength="256"></textarea>
-                <button type="submit" class="col-sm-2" id="chat-send"> Send</button>
-            </div>
-        </div>
-    </section>
-
-
+    </div>
 
 
 
@@ -101,8 +97,9 @@
 
         </div>
     </footer>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="main.js"></script>
 
 </body>

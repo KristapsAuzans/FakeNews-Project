@@ -59,34 +59,23 @@ function myMap() {
 };
 
 
-var chat_list = [
-    {
-        username: "juris",
-        time: 'event.timeStamp',
-        message: "juris iet skolā",
+$(document).ready(function(){
 
-    },
-];
-$(document).ready(function () {
-    for (var itemKey in chat_list) {
-        var item = chat_list[itemKey];
-        addItem(item);
-    }
-    $('#chat-send').click(function(event) {
-        var newItem = {
-        username: $('#chat-username').val(), 
-        time: $('span').text(event.timeStamp),     
-        message: $('#chat-message').val(),
-                };
-        addItem(newItem);
-        $('#chat-username').val('');
-        $('#chat-message').val('');
+    $('#send-chat-message').click(function(){
+        var username = $('#chat-username-input').val();
+        // document.querySelector('#chat-username-input').value // <-- vanilla JS
+        var comment = $('#chat-message-input').val();
+        // document.querySelector('#chat-message-input').value // <-- vanilla JS
+
+        var date = new Date('2017-12-24');
+        var commentElement = $('<div class="chat-message">' +
+            '<h4>' + username + '<em>' + date + '</em></h4>' +
+            '<p>' +
+            comment +
+             '</p>' +
+         '</div>');
+        $('#chat-window').append(commentElement);
+        $('#chat-username-input').val('');        
+        $('#chat-message-input').val('');
     });
 });
-
-function addItem(item) {
-    var li = $('<li>');
-    li.text(item.username + ": " + item.message);
-    
-    $('#chat-list').append(li);
-}
