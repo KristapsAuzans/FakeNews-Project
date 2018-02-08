@@ -129,14 +129,34 @@ body {
   height: 400px;
   resize: none;
   background-color: white;
-  
+  border-style: solid;  
+    
   }
   
 
 #chat-panel{
   background-color: white;
   text-align: left;
+  border-style: solid;  
+}
+
+#chat-message{  
+  margin-bottom: 10px;
+  border:1px solid black;
+  width: 80%;
+}
+#chat-send{
+  width: 20%;
   
 }
+#chat-username{
+  border-style: solid;  
+  
+}
+#chat-list li{
+  border-style: solid;  
+  list-style-type: none;
+}
+
 
 

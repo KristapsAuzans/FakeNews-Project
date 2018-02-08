@@ -62,7 +62,9 @@ function myMap() {
 var chat_list = [
     {
         username: "juris",
+        time: 'event.timeStamp',
         message: "juris iet skolā",
+
     },
 ];
 $(document).ready(function () {
@@ -70,13 +72,15 @@ $(document).ready(function () {
         var item = chat_list[itemKey];
         addItem(item);
     }
-    $('#chat-send').click(function () {
+    $('#chat-send').click(function(event) {
         var newItem = {
-        username: $('#chat-username').val(),
+        username: $('#chat-username').val(), 
+        time: $('span').text(event.timeStamp),     
         message: $('#chat-message').val(),
-        };
+                };
         addItem(newItem);
-        
+        $('#chat-username').val('');
+        $('#chat-message').val('');
     });
 });
 
