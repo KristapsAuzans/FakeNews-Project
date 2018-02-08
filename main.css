@@ -53,14 +53,14 @@ body {
   .btn.btn-primary {
     border-radius: 2px;
     border: 0px;
-    color: #fbd1d5;
+    color: blue;
     text-shadow: none;
     background-color: #ffffff;
   }
   
   .btn.btn-primary:hover {
     color: #ffffff;
-    background-color: #fbd1d5;
+    background-color:blue;
   }
   
   .btn-secondary {
@@ -174,5 +174,47 @@ float:left;
  
 }
 
+
+*[role="form"] {
+  max-width: 530px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+  margin-left: 5em;
+  margin-bottom: 1em;
+}
+
+#googleMap{
+width:400px;
+height:400px;
+background:yellow;
+}
+
+.chat-controls > div {
+margin-bottom:10px;
+}
+#chat-window{
+height: 500px;
+border: 1px solid #ccc;
+margin: 10px 0px;
+padding: 10px;
+overflow: auto;
+background-color: white;
+}
+.chat-message {
+border-bottom: 1px solid #ccc;
+}
+.chat-message h4 {
+font-size: 26px;
+}
+.chat-message h4 em {
+color: #ccc;
+font-size: 16px;
+margin-left: 5px;
+}
 
 
