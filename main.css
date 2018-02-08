@@ -105,16 +105,15 @@ body {
 
  .articleImage{
   margin-bottom:15px;
+  
  }
  .gallery ul li img{
   cursor: pointer;
-  
-  min-height: 90px;
+    min-height: 90px;
   border: 3px solid rgba(126, 122, 122, 0.671);
     border-radius: 4px;
-  
- 
- }
+   }
+   
 
  .modal-body {
   padding: 5px !important;
@@ -127,6 +126,9 @@ body {
 .modal-dialog img {
   text-align: center;
   margin: 0 auto;
+}
+.row img{
+  margin-left: 16px;
 }
 
 
