@@ -15,8 +15,9 @@
     <header class="container">
         <div class="row">
 
-            <img src="images\logo.png" class="img-fluid" alt="Responsive image">
-
+                <a href="index.html">
+                        <img src="images\logo.png" alt="Responsive image" width="80px">
+                    </a>
             <nav class="col-sm-12 text-right">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
@@ -34,12 +35,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="AboutUs.html">About us</a>
                     </li>
-
-
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="container">
     <ol class="breadcrumb">
         <li class="breadcrumb-item ">
             <a href="index.html">Home</a>
@@ -48,20 +48,36 @@
         </li>
     </ol>
 
-    <section class="container">
-        <h2>Chat</h2>
-        <div>
-            <textarea name="chat" id="chat" cols="150" rows="20" class="row col-sm-12"></textarea>
-        </div>
-        <div class="row col-sm-12">
-            <label>Username: </label>
-            <input type="text">
-            <label>Message: </label>
-            <input type="text" class = "col-sm-10">
-            <button type="submit" class = "col-sm-2">Add</button>
 
+
+    <div class="container">
+        <h2>Chat</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="chat-window">
+
+
+                </div>
+                <hr>
+                <div class="chat-controls">
+                    <div class="">
+                        <input type="text" id="chat-username-input" class="form-control" placeholder="Username:">
+                    </div>
+                    <div class="">
+                        <textarea id="chat-message-input" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="">
+                        <button id="send-chat-message" class="btn btn-default">Send!</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
+
+
+
 
     <footer class="container">
         <div class="row">
@@ -83,6 +99,10 @@
 
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
 
 </body>
 

@@ -27,38 +27,24 @@ body {
         color: red}
         
 .breadcrumb{
+  
     background-color: white;
     content: "/\00a0";
 }
     .breadcrumb :before {
-        padding: 8px;
+        padding: 10px;
         color: black;
         
     }
 
-
-  .img-fluid{ max-width: 6%; height: auto;} 
+    .img-fluid{ max-width: 6%; height: auto;} 
   
   header p {
     padding: 0 20px;
     margin: 0;
   }
   
-  .jumbotron {
-    display: flex;
-    align-items: center;
-    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
-    background-size: cover;
-    color: #ffffff;
-    height: 500px;
-    text-shadow: 0.25px 0.25px 0.25px #000000;
-  }
   
-    
-  section .row img {
-    margin: 0 0 30px;
-    width: 100%;
-  }
   
   .col-md-6 {
     margin: 0 0 30px;
@@ -67,14 +53,14 @@ body {
   .btn.btn-primary {
     border-radius: 2px;
     border: 0px;
-    color: #fbd1d5;
+    color: blue;
     text-shadow: none;
     background-color: #ffffff;
   }
   
   .btn.btn-primary:hover {
     color: #ffffff;
-    background-color: #fbd1d5;
+    background-color:blue;
   }
   
   .btn-secondary {
@@ -93,7 +79,7 @@ body {
     justify-content: flex-end;
   }
   
-  footer ul {
+  footer ul li{
     list-style: none;
   }
   
@@ -101,3 +87,134 @@ body {
     width: 32px;
     height: 32px;
   }
+
+  
+
+ .gallery ul{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  
+  
+ }
+
+ .gallery ul li{
+  list-style: none;
+  margin-bottom:15px;
+     
+ }
+
+ .articleImage{
+  margin-bottom:15px;
+  
+ }
+ .gallery ul li img{
+  cursor: pointer;
+    min-height: 90px;
+  border: 3px solid rgba(126, 122, 122, 0.671);
+    border-radius: 4px;
+   }
+   
+
+ .modal-body {
+  padding: 5px !important;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-dialog img {
+  text-align: center;
+  margin: 0 auto;
+}
+.row img{
+  margin-left: 0px;
+}
+.row h5{
+  float: right;
+}
+
+.controls {
+  width: 50px;
+  display: block;
+  font-size: 11px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+
+.next {
+  float: right;
+  text-align: right;
+}
+
+.modal-dialog {
+  max-width: 900px;
+  padding-top: 90px;
+}
+
+.carousel-inner img{
+  display: block;
+    margin: 0 auto;
+min-height: 400px;
+max-height: 400px; 
+}
+
+.small-article img{
+height: 95px;
+padding: 0px 5px 5px 0px;
+float:left;
+}
+
+.text-justify {
+  padding: 0px 10px 10px 0px;
+}
+.small-article p{
+  float:left;
+ 
+}
+
+
+*[role="form"] {
+  max-width: 530px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+  margin-left: 5em;
+  margin-bottom: 1em;
+}
+
+#googleMap{
+width:400px;
+height:400px;
+background:yellow;
+}
+
+.chat-controls > div {
+margin-bottom:10px;
+}
+#chat-window{
+height: 500px;
+border: 1px solid #ccc;
+margin: 10px 0px;
+padding: 10px;
+overflow: auto;
+background-color: white;
+}
+.chat-message {
+border-bottom: 1px solid #ccc;
+}
+.chat-message h4 {
+font-size: 26px;
+}
+.chat-message h4 em {
+color: #ccc;
+font-size: 16px;
+margin-left: 5px;
+}
+
+
