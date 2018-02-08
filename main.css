@@ -109,6 +109,10 @@ body {
  .gallery ul li img{
   cursor: pointer;
   
+  min-height: 90px;
+  border: 3px solid rgba(126, 122, 122, 0.671);
+    border-radius: 4px;
+  
  
  }
 
@@ -151,18 +155,22 @@ body {
 min-height: 400px;
 max-height: 400px; 
 }
+
 .small-article img{
-height: 75px;
+height: 95px;
 padding: 10px 10px 10px 10px;
-float:left
+float:left;
 }
 
 .text-justify {
   padding: 10px 10px 10px 10px;
 }
 .small-article p{
-  float:right
+  float:left;
+ 
 }
-.pull-left{
-  float: left !important;
-}
+
+
+
+
+
